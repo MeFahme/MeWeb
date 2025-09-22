@@ -9,66 +9,76 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Taktuku Garage</h1>
         <p>Toko Part Motor Asli & Aksesori Terpercaya</p>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="produk.html">Produk</a> |
-        <a href="https://wa.me/6285754483120" target="_blank">Kontak</a> |
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="https://wa.me/6285754483120" target="_blank">Kontak</a>
         <a href="lokasi.html">Lokasi Kami</a>
     </nav>
 
+    <!-- Notifikasi harga (opsional, jika ingin ditambahkan) -->
+    <!--
+    <div class="notice notice--price">
+        <p>Harga bisa berubah sewaktu-waktu! (Last Update: 11 Sep 2025)</p>
+    </div>
+    -->
+
     <main class="container">
-        <section>
-            <h2>Selamat Datang di Taktuku Garage</h2>
-            <p>Taktuku Garage menyediakan berbagai suku cadang dan aksesori motor asli serta berkualitas tinggi untuk berbagai merek motor populer di Indonesia. Kami siap membantu Anda menjaga performa motor kesayangan Anda dengan part-part original dan harga kompetitif.</p>
+
+        <section class="section">
+            <h2 class="section-title">Selamat Datang di Taktuku Garage</h2>
+            <p class="section-subtitle">Taktuku Garage menyediakan berbagai suku cadang dan aksesori motor asli serta berkualitas tinggi untuk berbagai merek motor populer di Indonesia. Kami siap membantu Anda menjaga performa motor kesayangan Anda dengan part-part original dan harga kompetitif.</p>
         </section>
 
-        <section class="featured-products">
-            <h3>Produk Unggulan Kami</h3>
-            <div class="product-grid">
-                <div class="product-item">
+        <section class="section">
+            <h3 class="section-title">Produk Unggulan Kami</h3>
+            <div class="featured-grid">
+                <div class="featured-item">
                     <img src="gambar/index/piston.jpg" alt="Suku Cadang Mesin: Piston, Ring, Kopling">
-                    <p>Suku Cadang Mesin</p>
+                    <p class="featured-item__label">Suku Cadang Mesin</p>
                 </div>
-                <div class="product-item">
+                <div class="featured-item">
                     <img src="gambar/index/filter_udara.jpg" alt="Filter Udara & Oli">
-                    <p>Filter Udara & Oli</p>
+                    <p class="featured-item__label">Filter Udara & Oli</p>
                 </div>
-                <div class="product-item">
+                <div class="featured-item">
                     <img src="gambar/index/kampas.jpg" alt="Rem & Kampas Rem">
-                    <p>Rem & Kampas</p>
+                    <p class="featured-item__label">Rem & Kampas</p>
                 </div>
-                <div class="product-item">
+                <div class="featured-item">
                     <img src="gambar/index/rantai.jpg" alt="Rantai & Sproket">
-                    <p>Rantai & Sproket</p>
+                    <p class="featured-item__label">Rantai & Sproket</p>
                 </div>
             </div>
         </section>
 
-        <section class="why-us">
-            <h3>Kenapa Memilih Taktuku Garage?</h3>
-            <ul>
-                <li>✅ 100% Suku Cadang Asli</li>
-                <li>✅ Stok Selalu Tersedia</li>
-                <li>✅ Pelayanan Ramah & Cepat</li>
-                <li>✅ Pembayaran Aman & Return Mudah</li>
+        <section class="section">
+            <h3 class="section-title">Kenapa Memilih Taktuku Garage?</h3>
+            <ul class="feature-list">
+                <li class="feature-list__item">✅ 100% Suku Cadang Asli</li>
+                <li class="feature-list__item">✅ Stok Selalu Tersedia</li>
+                <li class="feature-list__item">✅ Pelayanan Ramah & Cepat</li>
+                <li class="feature-list__item">✅ Pembayaran Aman & Return Mudah</li>
             </ul>
         </section>
 
-        <section class="cta-section">
-            <p>Ingin mencari part motor spesifik? Cari produk Anda melalui kategori di halaman produk, atau hubungi tim kami untuk bantuan pemilihan part yang tepat sesuai model motor Anda. Kami melayani pembelian satuan maupun grosir!</p>
-            <a href="produk.html" class="btn-primary">Lihat Semua Produk →</a>
+        <section class="section">
+            <div class="cta">
+                <p class="cta__text">Ingin mencari part motor spesifik? Cari produk Anda melalui kategori di halaman produk, atau hubungi tim kami untuk bantuan pemilihan part yang tepat sesuai model motor Anda. Kami melayani pembelian satuan maupun grosir!</p>
+                <a href="produk.html" class="btn btn-primary">Lihat Semua Produk →</a>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 Taktuku Garage. All Rights Reserved.</p>
-        <p>Referensi Desain: <a href="https://www.aringocomputer.com">Aringo Computer</a></p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Taktuku Garage. All Rights Reserved.</p>
+        <p class="footer__text">Referensi Desain: <a href="https://www.aringocomputer.com">Aringo Computer</a></p>
     </footer>
 
 </body>
