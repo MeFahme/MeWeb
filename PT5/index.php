@@ -104,8 +104,10 @@ $products_data = $result_products ? $result_products->fetch_all(MYSQLI_ASSOC) : 
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <a href="edit.php?id=<?= $brand['id'] ?>" class="link">Edit</a>
-                                <a href="hapus.php?id=<?= $brand['id'] ?>" class="link" onclick="return confirm('Yakin hapus data ini?')">Hapus</a>
+                                <div class="action-buttons">
+                                    <a href="edit.php?id=<?= $brand['id'] ?>" class="btn-edit">Edit</a>
+                                    <a href="hapus.php?id=<?= $brand['id'] ?>" class="btn-delete" onclick="return confirm('Yakin hapus data ini?')">Hapus</a>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -142,8 +144,10 @@ $products_data = $result_products ? $result_products->fetch_all(MYSQLI_ASSOC) : 
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <a href="edit_model.php?id=<?= $model['model_id'] ?>" class="link">Edit</a>
-                                <a href="hapus_model.php?id=<?= $model['model_id'] ?>" class="link" onclick="return confirm('Yakin hapus model ini?')">Hapus</a>
+                                <div class="action-buttons">
+                                    <a href="edit_model.php?id=<?= $model['model_id'] ?>" class="btn-edit">Edit</a>
+                                    <a href="hapus_model.php?id=<?= $model['model_id'] ?>" class="btn-delete" onclick="return confirm('Yakin hapus model ini?')">Hapus</a>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -184,8 +188,10 @@ $products_data = $result_products ? $result_products->fetch_all(MYSQLI_ASSOC) : 
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <a href="edit_product.php?id=<?= $product['product_id'] ?>" class="link">Edit</a>
-                                <a href="hapus_product.php?id=<?= $product['product_id'] ?>" class="link" onclick="return confirm('Yakin hapus produk ini?')">Hapus</a>
+                                <div class="action-buttons">
+                                    <a href="edit_product.php?id=<?= $product['product_id'] ?>" class="btn-edit">Edit</a>
+                                    <a href="hapus_product.php?id=<?= $product['product_id'] ?>" class="btn-delete" onclick="return confirm('Yakin hapus produk ini?')">Hapus</a>
+                                </div>
                             </td>
                         </tr>
                     <?php endforeach; ?>
